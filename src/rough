@@ -1,0 +1,8 @@
+ // const handleChange =(key,value)=>{
+  //   setUpdate({
+  //     ...update,
+  //     [key] : value
+  //   })
+
+  // }
+  value ={update.firstInput} onChange ={e=>handleChange("firstInput",e.target.value)}

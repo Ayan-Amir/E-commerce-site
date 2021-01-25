@@ -1,0 +1,41 @@
+*{font-family: 'josefin', cursive;}
+.imgDiv {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-fluid{
+  height: 35vh;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 10px 2px lightgray;
+}
+.shopingCard{
+  box-shadow: 1px 1px 30px 2px lightgray;
+}
+.inputClass{
+  width: 2.2rem;
+}
+.items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fnt{
+  font-family: 'josefin', cursive;
+  color: gray;
+}
+.trashClass:hover{
+  cursor: pointer;
+  color:green;
+}
+.heartClass:hover{
+cursor: pointer;
+color:red;
+}
+.rightSide{
+  box-shadow: 1px 1px 10px 2px lightgray;
+}
+.disCount{box-shadow: 1px 1px 10px 2px lightgray;
+}
+
