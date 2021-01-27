@@ -66,6 +66,13 @@ function App() {
     }
     
   }
+
+  const handleKey =(e)=>{
+    if(e.keyCode == 13){
+      e.preventDefault();
+      discount();
+    }
+  }
   return (
     <div className="container">
       <div className ="row">
@@ -181,7 +188,7 @@ function App() {
                 <p>Total amount (including VAT)</p>
                 <p>$<span>{`${productAmount + 50}`}</span></p>
                 </div>
-                <button className="btn btn-primary" >CHECKOUT</button>
+                {/* <button className="btn btn-primary" >CHECKOUT</button> */}
               </div>
               {/* Discount Part */}
               <div className ="disCount mt-3">
@@ -193,7 +200,7 @@ function App() {
                     </a>
                     <div className ="collapse" id ="collapseExample">
                       <div className="mt-3">
-                        <input type ="text" id ="disCountCode1" className ="form-control font-weight-bold" placeholder ="Enter the discount Code" />
+                        <input type ="text" id ="disCountCode1" className ="form-control font-weight-bold" onKeyDown ={handleKey} placeholder ="Enter the discount Code" />
                         <small id ="errorTrw" className ="text-dark mt-3">Ayyan</small>
                       </div>
                       <button className="btn btn-primary btn-sm mt-3" onClick={discount}>Apply</button>

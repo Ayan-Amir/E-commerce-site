@@ -6,3 +6,20 @@
 
   // }
   value ={update.firstInput} onChange ={e=>handleChange("firstInput",e.target.value)}
+  let disCountCode1 , errorTrw ;
+  useEffect(() => {
+    disCountCode1 = document.getElementById("disCountCode1");
+    errorTrw = document.getElementById("errorTrw");
+    }, [])      
+    let inputID = document.getElementById("inputID");
+  let inputID2 = document.getElementById("inputID2");
+  let errorTrw = document.getElementById("errorTrw");
+  let disCountCode1 = document.getElementById("disCountCode1");
+
+  
+  const pressesKey =(e)=>{
+    if(e.keyCode == 13){
+      e.preventDefault();
+      discount();
+    }
+  }
