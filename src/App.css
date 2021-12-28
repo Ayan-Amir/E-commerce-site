@@ -38,4 +38,27 @@ color:red;
 }
 .disCount{box-shadow: 1px 1px 10px 2px lightgray;
 }
+.setQuantity{
+  position: relative;
+}
+.setQuantity::before{
+	content: "minimun 1 piece";
+	position: absolute;
+	top: 2.5rem;
+	left: 5.4rem;
+	color: rgb(238, 36, 137);
+	font-size: 0.9rem;
+}
+.page-link:focus{
+box-shadow: none;
+}
+.fa-trash:hover{
+  color: green;
+  cursor: pointer;
+}
+.fa-heart:hover{
+  color: red;
+  cursor: pointer;
+}
+
 
